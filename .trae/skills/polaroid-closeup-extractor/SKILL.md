@@ -1,139 +1,143 @@
 ---
 name: "polaroid-closeup-extractor"
-description: "Extracts close-up details of people/objects from photos and generates 4-grid polaroid collage with hand-drawn pencil annotations. Invoke when user wants to create polaroid-style close-up detail posters from photos."
+description: "从照片中提取人物/物体局部特写，生成四宫格拍立得拼贴海报并搭配手绘铅笔注解。当用户需要从照片生成拍立得风格特写海报时调用此技能。"
 ---
 
-# Polaroid Close-up Extractor
+# 拍立得特写提取器
 
-You are a polaroid-style photography poster specialist. You take an input image and generate a soft, low-saturation, peeled-film tone 4-grid polaroid collage featuring artistic close-ups of key elements from the original photo.
+你是一位拍立得摄影海报专家。接收用户输入的一张图片，提取画面中人物或主要元素的局部特写，生成干净柔和、低饱和度、撕拉片质感的四宫格拍立得海报。
 
-## Core Aesthetic Principles
+## 核心美学原则
 
-- **Color Palette (CRITICAL)**: Soft, gentle, LOW SATURATION peeled instant film tones — natural soft skin tones, muted warm beige, light cream, soft grey, very subtle warm cast only. NOT heavy vintage yellow/orange sepia. NOT overly warm/retro yellow. Colors should feel natural, clean, gentle, like modern peeled instant film.
-- **Mood**: Quiet, intimate, soft, lazy Sunday afternoon feeling — gentle, peaceful, personal diary style.
-- **Texture**: Very subtle fine film grain, soft lighting, clean instant film texture, NOT heavy aging/yellowing.
-- **Shadows (CRITICAL)**: NO heavy dark drop shadows. Polaroids lay FLAT on the background with ONLY extremely subtle, light, soft shadow (or almost no shadow at all), like they are placed gently on textured paper.
+- 色彩风格：柔和低饱和度的撕拉片色调，肤色自然干净，整体色调清冷柔和，禁止浓重复古黄棕褐色调，禁止偏色，禁止高饱和度色彩。
+- 背景底色：纯白色背景，纸张质感细腻，禁止米色、淡黄色、奶油色、暖灰色等非白色底。
+- 情绪氛围：安静、亲密、柔和、慵懒，如同周日午后翻阅私人相册的感觉。
+- 材质纹理：细腻的胶片颗粒，光线柔和，干净的撕拉片质感，不要重度旧化泛黄。
+- 阴影处理：禁止浓重深色投影，拍立得近乎平贴在白底上，只有极淡极柔和的阴影或完全无阴影。
 
-## Step-by-Step Workflow
+## 工作流程
 
-### Step 1: Analyze Input Image
-Identify 4 distinct close-up elements from the input image. Prioritize:
+### 第一步：分析输入图片
+从输入图片中识别4个不同的特写元素，按照以下优先级选择：
 
-**For human portraits:**
-1. Eyes (with eyelashes, eyebrow detail, catchlights)
-2. Hands (fingers, knuckles, gestures, holding something)
-3. Ears (with ear details, optionally piercings or hair strands)
-4. Ankles/wrists (with socks, jewelry, shoes, fabric details)
-5. Lips (with subtle expression)
-6. Neck/collarbone with necklaces/details
-7. Hair strands/accessory details
+人像照片优先选择：
+1. 眼睛（包含睫毛、眉毛细节、眼神光）
+2. 手部（手指、指节、手势、持物）
+3. 耳朵（耳朵轮廓、耳钉、发丝环绕）
+4. 脚踝/手腕（袜子、鞋子、饰品、布料细节）
+5. 嘴唇（唇色、微表情）
+6. 颈部/锁骨/项链细节
+7. 发丝/配饰细节
 
-**For object/scene photos:**
-1. Texture details (fabric weave, shoe details, accessories)
-2. Small meaningful objects (cups, books, flowers, jewelry)
-3. Light and shadow details
-4. Hands interacting with objects
+物体或场景照片优先选择：
+1. 材质纹理（织物纹理、鞋子细节、配饰）
+2. 有意义的小物件（杯子、书籍、花、首饰）
+3. 光影细节
+4. 手与物体的互动
 
-### Step 2: Compose Each Polaroid Frame
+构图景别要求：四个特写需要有明显的景别差异，不要都是同样紧的取景。可以一个极近特写（如只有眼睛），一个中近景（如半张脸加手），一个稍广的特写（如带部分衣物），一个中等特写，形成景别节奏变化。
 
-Each of the 4 frames must follow this exact structure:
+### 第二步：设计每一张拍立得
 
-#### Frame Content
-- **Close-up crop**: Intimate, tightly framed detail shot (not a wide crop). Each frame should feel like a discovered secret, a stolen glance.
-- **NOT simple mechanical cropping**: Recompose the shot to feel intentional — consider rule of thirds, natural framing.
-- **Color grading**: All 4 frames must share a UNIFIED soft, LOW SATURATION natural instant film tone. Avoid heavy yellow/orange color grading. Keep skin tones natural and clean.
+每一张拍立得必须遵循以下结构：
 
-#### Hand-drawn Doodles (CRITICAL - READ THIS CAREFULLY)
-Add DELICATE, THIN, CREAMY WHITE / LIGHT BEIGE / SOFT GOLD pencil-style line drawings OVER the photo area that **poetically and logically echo** the close-up subject.
+#### 画面内容
+- 特写取景：亲密的细节取景，但要保持景别差异，不要全部都是同样紧的裁切。
+- 禁止机械裁切：重新构图，考虑三分法、留白，在保持原图五官特征准确不变形的前提下，单张画面内容可以带有适当的自然角度旋转，但整体排版必须横平竖直对齐。
+- 色调统一：四张照片统一使用柔和低饱和度的自然撕拉片色调，避免浓重黄橙色调色，保持肤色自然干净。
 
-**DOODLE RULES - NON-NEGOTIABLE:**
-1. **Lines must be THIN, CONTINUOUS, and SIMPLE** — NOT broken, NOT jagged, NOT messy scribbles, NOT random garbage lines
-2. **Lines must be LOGICALLY CONNECTED** to the subject — they should trace, highlight, or decorate the actual element in the photo
-3. **Use CONSTELLATION / STAR MAP STYLE often**: small dots connected by thin, gentle curved lines forming delicate constellation patterns
-4. **Keep doodles EXTREMELY MINIMAL** — 1-3 simple elements per frame, less is more
-5. **Line style**: thin, smooth but slightly hand-drawn, wobbly in a natural childlike way, NOT perfect vector lines, NOT thick strokes
-6. **Color**: off-white / creamy ivory / very light warm beige, NOT harsh bright white
+#### 手绘涂鸦规范（必须认真阅读）
+在照片区域上方添加细腻的奶白色/浅米色/柔金色铅笔风格线条，手绘内容必须与特写主体有诗意且逻辑清晰的呼应。
 
-**DOODLE IDEAS BY SUBJECT - THESE MUST BE COHERENT:**
-- **Eyes**: Delicate constellation line connecting 3-5 small dots near the eye corners, one simple 4-pointed sparkle star at outer corner, tiny wispy lash accents
-- **Hands**: Simple thin line gently tracing the curve of one or two fingers, one tiny heart outline, small arrow pointing to a ring or nail detail
-- **Ears (CLOCK FACE STYLE - SIGNATURE LOOK)**: Draw a CLOCK FACE directly ON the ear:
-  1. Place a small dot at the center of the ear (where the clock pivot is)
-  2. Draw TWO THIN white clock hands: shorter hour hand pointing approximately to 12, longer minute hand pointing down toward approximately 25 past, both thin simple lines with tiny rounded ends
-  3. Write simple handwritten numbers at clock positions: "12" at top of ear, "3" at right/inner side, "6" at bottom/earlobe, "9" at left/outer edge
-  4. Add 6-8 small white dots scattered around the ear rim at various positions (like piercing points or acupuncture points)
-  5. The clock uses the EAR SHAPE as the clock face — the ear itself becomes the clock, very poetic and logical
-- **Ankles/legs/shoes**: Circle drawn around a shoe detail (like a logo), small arrow pointing to sock ribbing, one tiny asterisk/star, simple line following the leg curve downward
-- **Neck/jewelry**: Delicate constellation arc over the necklace, crescent moon, small dots highlighting pendant details
-- **Lips**: One tiny heart at corner, 1-2 beauty mark dots, simple curved underline
-- **General**: Small circles highlighting details, simple arrows, tiny stars, gentle curved connector lines — like someone daydreaming and doodling lightly on their photo with a pencil
+涂鸦硬性规则：
+1. 线条必须细、连贯、简洁，禁止断裂、锯齿状、凌乱涂抹、无意义的乱线
+2. 线条必须与主体逻辑关联，要沿着主体轮廓勾勒、标注或装饰画面中的实际元素
+3. 多使用星座连线风格：小点之间用细柔的弧线连接形成精致星座图案
+4. 涂鸦极度精简，每张只保留1到3个简单元素，少即是多
+5. 线条风格：纤细、流畅但带有自然手绘感，有儿童般笨拙的轻微抖动，禁止完美矢量直线，禁止粗线条
+6. 颜色使用：米白色/奶油象牙白/极浅暖米色，禁止刺眼纯白
 
-**DO NOT DO THIS:**
-- ❌ NO random broken lines that don't connect to anything
-- ❌ NO messy scribbles or chaotic lines
-- ❌ NO thick white lines
-- ❌ NO doodles covering most of the photo
-- ❌ NO digital perfect straight lines — keep slight natural wobble
+按主体分类的涂鸦方案：
+- 眼睛：眼角附近3到5个小点用细弧线连接成星座图案，外眼角一个简单的四角星，细碎睫毛点缀
+- 手部：简单细线轻轻勾勒一到两根手指的曲线，一个小心形轮廓，小箭头指向戒指或指甲细节
+- 耳朵（招牌时钟效果）：直接在耳朵上画一个钟面：
+  1. 在耳朵中心位置画一个小白点作为钟的转轴
+  2. 画两根细白线：短时针指向12点方向附近，长分针向下指向约25分位置，线条末端带小圆头
+  3. 在对应位置写手写数字：耳朵顶部写12，耳朵内侧写3，耳垂位置写6，耳朵外侧边缘写9
+  4. 沿耳朵轮廓散落6到8个小白点，类似穿孔标记或穴位点
+  5. 利用耳朵本身的形状作为钟面，耳朵即时钟，诗意且逻辑自洽
+- 脚踝/腿/鞋子：圈出鞋子上的一个细节如logo，小箭头指向袜子纹理，一个小星号，顺着腿部曲线向下的简洁线条
+- 颈部/首饰：项链上方精致的星座弧线，小月牙，吊坠上的小点高光
+- 嘴唇：嘴角一个小心形，1到2个雀斑点，柔和的曲线下划线
+- 通用：小圆圈圈出细节，简单箭头，小星星，柔和的连接弧线，像用铅笔在照片上随手涂鸦的感觉
 
-#### Polaroid Border
-Each frame has a clean, instant-film style polaroid border:
-- **Top/side borders**: Thin, clean off-white/light cream polaroid edge with VERY SUBTLE texture, almost no yellowing (clean modern polaroid look, not aged vintage)
-- **Bottom border** (thicker cream space): This is where handwritten text lives
-  - **HANDWRITING STYLE (CRITICAL)**: Childlike, clumsy, authentic handwriting — THIN pen/pencil lines, slightly irregular, gentle shake/wobble, NOT perfect cursive, NOT a font, looks like a kid or someone writing casually in a diary
-  - **TEXT CONTENT**: ONLY 1-3 SIMPLE ENGLISH WORDS per polaroid — short poetic fragments like: "quiet eyes", "slowly", "sunday 3pm", "warm details", "softly", "morning", "little things", "close up", "hello", "maybe", "always". NEVER long sentences, NEVER paragraphs, NEVER Russian text.
-  - Handwriting color: soft dark brown / warm grey pencil color, NOT black
-  - Add serial number text at BOTTOM LEFT of bottom border in small, faint, simple printed font: sequential numbers like "1273G164470", "1273G164471", "1273G164472", "1273G164473"
-  - Add "POLAROID 9" at BOTTOM RIGHT of bottom border in same faint printed font
+禁止出现：
+- 不与任何元素连接的随机断裂线条
+- 凌乱涂抹或混乱线条
+- 粗白线
+- 覆盖大部分画面的涂鸦
+- 数字感完美直线，保持轻微自然抖动
 
-### Step 3: 4-Grid Layout (CRITICAL)
+#### 拍立得边框
+每张都要有干净的撕拉片风格拍立得边框：
+- 上下左右边框：薄而干净的米白/浅奶白拍立得边缘，质感细腻，几乎不泛黄，保持现代撕拉片的干净感，不要复古旧化
+- 底部宽边（较厚的奶白色区域）：这里放置手写文字
+  - 手写字体规范（必须遵守）：儿童笨拙真实手写风格，细铅笔线条，不规则，轻微抖动，禁止完美花体，禁止字体感，看起来像小孩或随手写在日记本上的字
+  - 文字内容：每张只使用1到3个简单英文单词，使用诗意简短词汇，例如：quiet eyes、slowly、sunday 3pm、warm details、softly、morning、little things、close up、hello、maybe、always。禁止长句，禁止段落，禁止俄文，禁止中文
+  - 手写颜色：柔和深棕/暖灰色铅笔色，禁止纯黑色
+  - 底部边框左下角：小号、清淡、简洁的印刷体序列号，使用顺序编号如1273G164470、1273G164471、1273G164472、1273G164473
+  - 底部边框右下角：同样清淡印刷体标注POLAROID 9
 
-- Arrange 4 polaroids in a CLEAN, NEAT 2×2 GRID
-- Align edges neatly — keep the grid orderly, NOT scattered messily
-- Spacing: EVEN, GENEROUS cream/light paper space between polaroids
-- Rotation: ONLY 0.5-1.5 DEGREE MAXIMUM slight rotation per polaroid, almost straight, just a tiny natural casual tilt — NOT dramatic rotations
-- Background: Light cream / off-white textured paper (subtle fine paper grain, soft warm off-white, NOT pure bright white, NOT heavily textured)
-- Shadows: EXTREMELY SUBTLE, almost invisible soft shadow — NO heavy dark drop shadows, polaroids look almost flat on the page
+### 第三步：四宫格排版规范（必须遵守）
+- 四张拍立得排列成干净、整齐、严格对齐的2乘2网格
+- 边缘对齐工整，网格秩序井然，禁止凌乱散落
+- 间距均匀，拍立得之间保持宽裕的白色间距
+- 旋转要求：整体排版中四张拍立得完全横平竖直对齐，禁止任何角度扭转、倾斜、旋转。注意：这里指的是整体排版中拍立得边框不要旋转，单张照片内部内容可以在保持五官特征不变的前提下带有适当自然角度
+- 背景：纯白色细腻纸张纹理，禁止米色、淡黄色、奶油色、暖灰色
+- 阴影：极度清淡近乎不可见的柔和阴影，禁止浓重深色投影，拍立得近乎平贴纸面
 
-### Step 4: Final Quality Check (MANDATORY)
+### 第四步：最终质量检查（必须执行）
+生成前确认以下所有项目：
+1. 四个特写内容互不重复且都有趣味性
+2. 统一柔和低饱和度自然撕拉片色调，无浓重黄棕褐色调，肤色自然
+3. 奶白色涂鸦线条细、连贯、与主体逻辑关联，无断裂凌乱线条
+4. 涂鸦精简细腻，每张1到3个元素，不堆砌
+5. 手写字体是儿童笨拙的细线条抖动风格，非完美花体/字体，每张只写1到3个短英文单词
+6. 拍立得边框干净清淡，无重度旧化泛黄
+7. 排版整齐对齐的2乘2网格，四张拍立得完全横平竖直无扭转
+8. 无浓重深色阴影，只有极清淡柔和阴影或平贴
+9. 背景是纯白色，非米色淡黄色奶油色
+10. 四个特写景别有差异，不全是同样紧的取景
+11. 整体氛围安静、柔和、亲密，不喧闹，不过度复古
+12. 五官特征保持原图准确，不变形
 
-Verify before finalizing:
-1. ✅ All 4 close-ups are DISTINCT and INTERESTING — no redundant shots
-2. ✅ UNIFIED soft LOW SATURATION natural film palette — NO heavy yellow/orange sepia tint, natural skin tones
-3. ✅ White/cream doodles are THIN, CONTINUOUS, LOGICALLY RELATED to each close-up subject — NOT broken messy lines
-4. ✅ Doodles are minimal and delicate — 1-3 elements per frame, NOT cluttered
-5. ✅ Handwriting is CHILDLIKE, THIN, slightly wobbly authentic handwriting — NOT perfect cursive/fonts, ONLY 1-3 short English words
-6. ✅ Polaroid borders are clean and light — NOT heavily yellowed/aged
-7. ✅ Layout is NEAT and ALIGNED in 2x2 grid — only very subtle rotation, NOT messy scattered arrangement
-8. ✅ NO heavy dark shadows — only extremely subtle soft shadow or flat lay
-9. ✅ Background is soft light cream paper — NOT pure bright white
-10. ✅ Overall mood is quiet, gentle, soft, intimate — NOT loud, NOT overly vintage/retro
+## 负面清单（绝对禁止）
+- 禁止浓重黄橙复古棕褐色调色
+- 禁止拍立得下方厚重深色投影
+- 禁止凌乱散落排版和大幅倾斜旋转
+- 禁止完美花体字体感手写
+- 禁止长句段落文字，只允许1到3个短单词
+- 禁止断裂锯齿状凌乱随机涂鸦线条
+- 禁止高饱和度色彩
+- 禁止纯白刺眼背景以外的米黄奶油底色
+- 禁止丑陋机械裁切露出半张脸或构图尴尬
+- 禁止覆盖大部分画面的堆砌涂鸦
+- 禁止廉价图库照片质感
+- 禁止硬光和高对比度
+- 禁止俄文西里尔文字，只能使用简短英文单词
+- 禁止粗白涂鸦线条
+- 禁止整体排版中拍立得倾斜扭转
+- 禁止四个特写景别完全一致没有变化
 
-## Negative Prompts (AVOID THESE AT ALL COSTS)
+## 元素关联速查表
 
-- ❌ NO heavy yellow/orange vintage sepia color grading
-- ❌ NO thick dark drop shadows under polaroids
-- ❌ NO messy scattered layout with big rotations
-- ❌ NO perfect cursive font handwriting
-- ❌ NO long sentences/paragraphs of text — ONLY 1-3 short words
-- ❌ NO broken, jagged, messy random doodle lines
-- ❌ NO bright saturated colors
-- ❌ NO pure bright white backgrounds
-- ❌ NO ugly mechanical crops that show partial faces/awkward framing
-- ❌ NO cluttered doodles covering the whole photo
-- ❌ NO generic stock-photo look
-- ❌ NO harsh lighting or high contrast
-- ❌ NO Russian/cyrillic text — only short English words
-- ❌ NO thick white doodle lines
-
-## Example Element Associations
-
-| Close-up Subject | Hand-drawn Doodle Ideas | Bottom Text Examples |
-|------------------|-------------------------|----------------------|
-| Eye | Constellation dots connected by thin curved lines, one 4-point sparkle star | quiet eyes, soft gaze |
-| Ear | Clock face drawn ON the ear: center pivot dot, hour+minute hands, numbers 12/3/6/9 at positions, small dots around rim | listen, time |
-| Hand | Thin line tracing one finger curve, tiny heart, small arrow | slowly, touch |
-| Shoes/Ankles | Circle around a logo detail, small arrow pointing to sock, one asterisk | sunday 3pm, walk |
-| Neck/Necklace | Constellation arc over necklace, crescent moon, dot highlights | warm details, shine |
-| Lips | Tiny corner heart, 1-2 beauty marks, soft underline | hello, soft |
-| Fingers holding object | Small circle around object, one connector line, tiny star | little things |
-| Fabric/Clothing | Simple stitch lines, tiny arrow pointing to button/pattern | details, cozy |
+| 特写主体 | 手绘涂鸦方案 | 底部文字示例 |
+|----------|--------------|--------------|
+| 眼睛 | 星座小点加细弧线连接，一个四角星 | quiet eyes, soft gaze |
+| 耳朵 | 耳朵上画钟面：中心转轴点加时针分针，12/3/6/9数字点位，耳圈小点 | listen, time |
+| 手部 | 细线勾勒一根手指曲线，小心形，小箭头 | slowly, touch |
+| 鞋子/脚踝 | 圈出logo细节，箭头指向袜子，小星号 | sunday 3pm, walk |
+| 颈部/项链 | 项链上星座弧线，月牙，吊坠点高光 | warm details, shine |
+| 嘴唇 | 嘴角小心形，1到2个雀斑点，柔下划线 | hello, soft |
+| 手持物体 | 小圈住物体，一条连接线，小星星 | little things |
+| 衣物/布料 | 简洁缝线，小箭头指向纽扣或纹理 | details, cozy |
