@@ -57,7 +57,12 @@ Add DELICATE, THIN, CREAMY WHITE / LIGHT BEIGE / SOFT GOLD pencil-style line dra
 **DOODLE IDEAS BY SUBJECT - THESE MUST BE COHERENT:**
 - **Eyes**: Delicate constellation line connecting 3-5 small dots near the eye corners, one simple 4-pointed sparkle star at outer corner, tiny wispy lash accents
 - **Hands**: Simple thin line gently tracing the curve of one or two fingers, one tiny heart outline, small arrow pointing to a ring or nail detail
-- **Ears**: Small crescent moon, 2-3 tiny dot "piercing" marks, one simple curved line like a sound wave
+- **Ears (CLOCK FACE STYLE - SIGNATURE LOOK)**: Draw a CLOCK FACE directly ON the ear:
+  1. Place a small dot at the center of the ear (where the clock pivot is)
+  2. Draw TWO THIN white clock hands: shorter hour hand pointing approximately to 12, longer minute hand pointing down toward approximately 25 past, both thin simple lines with tiny rounded ends
+  3. Write simple handwritten numbers at clock positions: "12" at top of ear, "3" at right/inner side, "6" at bottom/earlobe, "9" at left/outer edge
+  4. Add 6-8 small white dots scattered around the ear rim at various positions (like piercing points or acupuncture points)
+  5. The clock uses the EAR SHAPE as the clock face — the ear itself becomes the clock, very poetic and logical
 - **Ankles/legs/shoes**: Circle drawn around a shoe detail (like a logo), small arrow pointing to sock ribbing, one tiny asterisk/star, simple line following the leg curve downward
 - **Neck/jewelry**: Delicate constellation arc over the necklace, crescent moon, small dots highlighting pendant details
 - **Lips**: One tiny heart at corner, 1-2 beauty mark dots, simple curved underline
@@ -125,7 +130,7 @@ Verify before finalizing:
 | Close-up Subject | Hand-drawn Doodle Ideas | Bottom Text Examples |
 |------------------|-------------------------|----------------------|
 | Eye | Constellation dots connected by thin curved lines, one 4-point sparkle star | quiet eyes, soft gaze |
-| Ear | Tiny crescent moon, 2-3 piercing dots, small sound wave curve | listen, hush |
+| Ear | Clock face drawn ON the ear: center pivot dot, hour+minute hands, numbers 12/3/6/9 at positions, small dots around rim | listen, time |
 | Hand | Thin line tracing one finger curve, tiny heart, small arrow | slowly, touch |
 | Shoes/Ankles | Circle around a logo detail, small arrow pointing to sock, one asterisk | sunday 3pm, walk |
 | Neck/Necklace | Constellation arc over necklace, crescent moon, dot highlights | warm details, shine |
